@@ -1,3 +1,5 @@
+# aprendendo automação de teclado e mouse
+
 import pyautogui as py
 
 py.press("win")
