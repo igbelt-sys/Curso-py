@@ -11,7 +11,7 @@ Ele está organizado da seguinte forma:
 
 Durante o curso, estou aprendendo a:
 
-- Desenvolver programas em Python.  
+- Desenvolver programas em Python;  
 - Criar algoritmos para resolver problemas.  
 - Aplicar conceitos de programação orientada a objetos.  
 - Testar e validar os programas.  
