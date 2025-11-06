@@ -1,15 +1,21 @@
-import streamlit as st
+
 import math as mt
+from streamlit import header, write, text_input, button, warning, success, error
 
-st.header('Fórmula de Bhaskara')
-st.write("Calculadora de raízes de uma equação do segundo grau") 
-st.write("ax² + bx + c = 0")
+# funcao python
+def calculo(deltafunc):
+     valor = mt.sqrt(delta) / (2*a)
+     return valor
 
-a = st.text_input("Digite o valor de A:")
-b = st.text_input("Digite o valor de B:")
-c = st.text_input("Digite o valor de C:")
+header('Fórmula de Bhaskara')
+write("Calculadora de raízes de uma equação do segundo grau") 
+write("ax² + bx + c = 0")
 
-if st.button("Calcular"):
+a = text_input("Digite o valor de A:")
+b = text_input("Digite o valor de B:")
+c = text_input("Digite o valor de C:")
+
+if button("Calcular"):
     try:
         a = float(a)
         b = float(b)
@@ -18,14 +24,14 @@ if st.button("Calcular"):
         delta = mt.pow(b, 2) - 4*a*c
 
         if delta < 0:
-            st.warning("A equação não possui raízes reais.")
+            warning("A equação não possui raízes reais.")
         elif delta == 0:
-            raiz3 = (-b) / (2*a)
-            st.success(f"A equação possui uma raiz real: x = {raiz3:.2f}")
+            raiz3 = calculo(delta)
+            success(f"A equação possui uma raiz real: x = {raiz3:.2f}")
         else:
-            raiz1 = (-b + mt.sqrt(delta)) / (2*a)
-            raiz2 = (-b - mt.sqrt(delta)) / (2*a)
-            st.success(f"A equação possui duas raízes reais:\nx₁ = {raiz1:.2f}\nx₂ = {raiz2:.2f}")
+            raiz1 = calculo (delta)
+            raiz2 = calculo(delta)
+            (f"A equação possui duas raízes reais:\nx₁ = {raiz1:.2f}\nx₂ = {raiz2:.2f}")
 
     except:
-        st.error("Por favor, insira valores válidos.")
+        error("Por favor, insira valores válidos.")
