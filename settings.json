@@ -75,7 +75,7 @@
   // ------------------------------
   "jupyter.interactiveWindow.textEditor.executeSelection": true,
   "editor.mouseWheelZoom": true,
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "editor.renderWhitespace": "all",
   "editor.wordWrap": "on",
 

@@ -1,0 +1,4 @@
+Nos elementos: ['3', 'higor', 'bosta', 'cabral', 'chorume', 'lixo', 'pastel de rato', 'sim']:
+07/11/2025 - 19h 59m - Sorteado: sim
+
+
